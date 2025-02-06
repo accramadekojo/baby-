@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #gif {
+            width: 300px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: red;
+            color: white;
+        }
+        .no {
+            background-color: black;
+            color: white;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        #valentineImage {
+            display: none;
+            width: 300px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will You Be My Valentine, Audrey? ❤️</h1>
+    
+    <img id="gif" src="Heart.gif"Cute Animation">
+
+    <div class="buttons">
+        <button class="yes" onclick="showMessage()">Yes ❤️</button>
+        <button class="no" onclick="alert('Try again 😉')">No 😢</button>
+    </div>
+
+    <div id="message">
+        Yay! You’re my Valentine forever! 💖
+        <br>
+        <img id="valentineImage" src="audrey.jpeg.jpg" alt="Audrey">
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+            document.getElementById("valentineImage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
